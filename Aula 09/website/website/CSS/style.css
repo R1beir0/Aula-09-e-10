@@ -1,0 +1,169 @@
+/*-- estrutura */
+/*menu*/
+
+#menu-principal ul {
+  padding: 0px;
+  margin: 0px;
+  background-color: #ededed;
+  list-style: none;
+}
+#menu-principal ul li {
+  display: inline;
+}
+
+/*alinha conteudo e menu:margin*/
+#menu-principal a {
+  display: block;
+  float: left;
+  font-size: 18px;
+  text-decoration: none;
+  color: #333;
+  margin: 0 52px 0 51px;
+}
+
+#menu-principal ul li a {
+  padding: 2px -26px;
+  display: inline-block;
+
+  /*-- visual do link*/
+  background-color: #d0c4c4;
+  color: #333;
+  text-decoration: none;
+  border-bottom: 3px solid #ededed;
+}
+
+#menu-principal {
+  position: absolute;
+  top: -26px;
+  right: 0px;
+}
+
+#menu-principal a:hover,
+#menu-principal a.ativo {
+  color: steelblue;
+}
+#menu-principal a.ativo {
+  font-weight: bold;
+}
+/* -- Padrões e reset */
+* {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style-type: none;
+}
+img,
+fieldset {
+  border: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+
+/*-- cabeçalho, conteúdo e rodapé*/
+#cabecalho,
+#conteudo {
+  width: 1100px;
+  margin: 0 auto;
+}
+
+/*cabeçalho*/
+#cabecalho {
+  position: relative;
+}
+
+#logo {
+  padding: 100px -20;
+  display: flex;
+  float: left;
+}
+
+#logo img {
+  display: flex;
+}
+
+/*conteúdo*/
+.conteudo {
+  text-align: right;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  border: #808080 solid 1px;
+}
+#conteudo {
+  margin: 30px auto;
+}
+#conteudo-principal {
+  float: left;
+  width: 500px;
+}
+#conteudo-secundario {
+  float: right;
+  width: 280px;
+  background-color: darkslategrey;
+}
+#bd-home #conteudo-secundario {
+  background-color: lightblue;
+  color: #000000;
+}
+
+
+
+
+
+/*rodapé*/
+#rodape-fora {
+  background-color: #808080;
+  bottom: 0px;
+  height: 100px;
+  position: absolute;
+}
+
+/*Classes de uso geral*/
+.grupo::before,
+.grupo::after {
+  content: ' ';
+  display: flex;
+}
+.grupo::after {
+  clear: both;
+}
+
+/*rodape*/
+#rodape {
+  width: 1650px;
+  margin: 0 auto;
+}
+
+#telefone-email {
+  float: left;
+  font-size: 16px;
+  color: #fff;
+  margin: 12px 0;
+}
+
+#telefone-email span.ddd {
+  font-size: 0.8em;
+}
+
+#endereco {
+  float: right;
+  text-align: right;
+  color: #fff;
+  font-size: 14px;
+  margin: 12px 0;
+}
+
+#copyrigth {
+  font-size: 11px;
+  color: #d9d9d9;
+  clear: both;
+  display: block;
+  padding: 1em 0;
+}
